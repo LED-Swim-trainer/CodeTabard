@@ -1,125 +1,26 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
-
-.modal-content {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
     text-align: center;
+    background-color: #121212;
+    color: white;
 }
 
-.sidebar {
-    width: 200px;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-}
-
-.sidebar button {
-    background-color: #777;
-    color: #fff;
-    border: none;
+button {
     padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-.sidebar button:hover {
-    background-color: #555;
-}
-
-.swimmers-container {
-    width: calc(100% - 200px);
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    overflow-y: auto; /* Allow scrolling if content overflows */
-}
-
-.container {
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-}
-
-h1 {
-    color: #555;
-}
-
-.controls {
-    margin-bottom: 20px;
-}
-
-.controls button {
-    background-color: #777;
-    color: #fff;
+    margin: 10px;
+    background-color: #007BFF;
     border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
+    color: white;
     cursor: pointer;
-    font-size: 16px;
 }
 
-.controls button:hover {
-    background-color: #555;
+video {
+    width: 80%;
+    border: 2px solid white;
 }
 
-.timer {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.lcd-number {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.laps-container {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr); /* Changed to 6 columns */
-    gap: 10px;
-}
-
-.lap {
-    background-color: #eee;
-    padding: 10px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.lap input {
-    width: 100px;
-    padding: 5px;
+#split-screen {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
